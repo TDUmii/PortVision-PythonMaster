@@ -202,8 +202,9 @@ class PortVision(QMainWindow):
         self.chi_tiet.setReadOnly(True)
         self.chi_tiet.setText("Click a node on the network map to inspect its data.")
         detail_box.addWidget(self.chi_tiet, 1)
-        detail_box.addWidget(chu("Addresses are local observations, not a verified physical network topology.",
-                                 10, "#8aa0b9"))
+        note = chu("The map shows socket relationships, not physical LAN topology.", 10, "#8aa0b9")
+        note.setWordWrap(True)
+        detail_box.addWidget(note)
         inspector = khung(detail_box)
         inspector.setFixedWidth(270)
         middle.addWidget(inspector)
