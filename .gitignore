@@ -29,3 +29,9 @@ venv/
 .antigravity/
 .DS_Store
 Thumbs.db
+
+# Teacher-only materials stay in Drive, not the app repository
+GIAO_TRINH.md
+bai_tap/
+test_core.py
+

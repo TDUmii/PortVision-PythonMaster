@@ -38,8 +38,8 @@ Nếu trên macOS không thấy đầy đủ tiến trình hoặc socket, đó c
 
 Ứng dụng **không gửi dữ liệu mạng đi đâu**, không gọi API ngoài, không đóng port, không chặn kết nối. Snapshot lưu trong `local_data/`, CSV do người dùng chọn nơi lưu. Các file đó cùng ảnh chụp, token, `.env`, file build đều nằm trong `.gitignore` và không được đưa lên GitHub. Không tải lên ảnh chụp phiên làm việc có IP hoặc tên máy thật.
 
-## Kiểm thử
+## Kiểm tra cú pháp
 
 ```bash
-python -m unittest -v test_core.py
+python -m py_compile app.py core.py network_map.py
 ```
