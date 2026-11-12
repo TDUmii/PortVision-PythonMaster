@@ -1,0 +1,32 @@
+* { font-family: "Segoe UI", "Arial"; font-size: 12px; color: #e4eefc; }
+QMainWindow, QWidget { background: #0b1220; }
+QLabel { background: transparent; }
+QWidget#sidebar { background: #101b2c; border-right: 1px solid #26344a; }
+QFrame#panel { background: #131e30; border: 1px solid #283950; border-radius: 14px; }
+QPushButton { background: #2563eb; border: 1px solid #3475fc; border-radius: 9px;
+              padding: 10px 15px; font-weight: 600; color: white; min-height: 18px; }
+QPushButton:hover { background: #3677f7; }
+QPushButton[secondary="true"] { background: #19263a; border: 1px solid #2d3c54; }
+QPushButton[secondary="true"]:hover { background: #273851; }
+QPushButton#navButton { text-align: left; padding: 12px 15px; background: transparent; border: none; color: #95aac2; }
+QPushButton#navButton:hover { background: #1a2b42; color: #eff6ff; }
+QPushButton#navButton[active="true"] { background: #193a58; color: #71d5f7; border-left: 3px solid #38bdf8; }
+QLineEdit, QComboBox { background: #162238; border: 1px solid #32445e;
+                       padding: 10px 12px; border-radius: 8px; selection-background-color: #2563eb; }
+QLineEdit:focus, QComboBox:focus { border-color: #38bdf8; }
+QComboBox::drop-down { border: none; width: 22px; }
+QComboBox QAbstractItemView { background: #17243a; color: #e4eefc; selection-background-color: #25517d; }
+QCheckBox { spacing: 8px; color: #b9cbe0; }
+QCheckBox::indicator { width: 16px; height: 16px; }
+QTableWidget { background: #111d2e; alternate-background-color: #142237; border: 1px solid #2d3d53;
+               border-radius: 10px; gridline-color: #263951; selection-background-color: #1c5675; }
+QTableWidget::item { padding: 7px; border: none; }
+QHeaderView::section { background: #18273c; color: #91abc7; border: 0; padding: 12px; font-weight: 700; }
+QTextEdit, QListWidget { background: #111c2d; border: 1px solid #2e3f56;
+                         border-radius: 9px; padding: 12px; font-family: "Consolas", "Segoe UI"; }
+QListWidget::item { padding: 10px; border-bottom: 1px solid #2b3b50; }
+QListWidget::item:selected { background: #1e4a66; }
+QScrollBar:vertical { width: 10px; background: #101b2b; }
+QScrollBar::handle:vertical { background: #3e546d; border-radius: 5px; min-height: 25px; }
+QScrollBar:horizontal { height: 10px; background: #101b2b; }
+QScrollBar::handle:horizontal { background: #3e546d; border-radius: 5px; min-width: 25px; }
